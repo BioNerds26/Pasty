@@ -1,4 +1,5 @@
 <title>Pasty</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -440,6 +441,27 @@ select.aip option{color:#0c1b33;background:#fff}
 .p4-mark{flex:none;line-height:1.3}
 .p4-q{display:grid;gap:1rem;padding:1.1rem;border-radius:16px;border:1px solid color-mix(in srgb,currentColor 12%,transparent)}
 .p4-q .p4-qt{margin:0}
+/* ---------- phone polish ---------- */
+@media (max-width:600px){
+  body{font-size:16px}
+  .h1s{font-size:clamp(1.9rem,8vw,2.4rem)}
+  .card{padding:1rem;border-radius:14px}
+  .stack{gap:.9rem}
+  .btn{min-height:44px;padding:.7rem 1rem}
+  .btn.sm{min-height:40px}
+  .inp,textarea.inp,select{font-size:16px}
+  .p4-ta{font-family:var(--body);font-size:16px}
+  .p4-q{border:0;padding:0}
+  .p4-q .p4-qt{font:400 1.15rem/1.45 var(--body)}
+  .qtext{font-size:1.3rem}
+  .opt{min-height:52px}
+  .navrow{gap:.5rem}
+  .navrow .btn{flex:1 1 auto}
+  .fin-bar{padding:.6rem 0}
+  .tabs{justify-content:space-between;width:100%}
+  .tab{padding:.4rem .5rem;font-size:.8rem}
+  .summary .big b{font-size:3rem}
+}
 </style>
 <script>try{var t=localStorage.getItem("pasty-theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);else if(t!=="system")document.documentElement.setAttribute("data-theme","light");}catch(e){document.documentElement.setAttribute("data-theme","light");}</script>
 
